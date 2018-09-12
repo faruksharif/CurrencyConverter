@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         EditText txt1=(EditText) findViewById(R.id.txt1);
         Log.i("Currency!!!","Please Click!!!");
         Log.i("Values1",txt1.getText().toString());
-        int DollarValueInInt = Integer.parseInt(txt1.getText().toString());
-        int DollarValueInBDT = DollarValueInInt*64;
-        String Total= Integer.toString(DollarValueInBDT);
+        Double DollarValueInInt = Double.parseDouble(txt1.getText().toString());
+        Double DollarValueInBDT = DollarValueInInt*64;
+        String Total= Double.toString(DollarValueInBDT);
         Toast.makeText(this, "Cad amount "+txt1.getText().toString()+" $ to BDT is "+ Total, Toast.LENGTH_LONG).show();
 
 
